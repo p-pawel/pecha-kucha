@@ -1,0 +1,193 @@
+
+<div class="body">
+
+  <div class="id">#{{id}}</div>
+
+
+  <div class="progress" [ngStyle]="{width: progress + '%' }"></div>
+
+  <div class="contents" style="background: #1d4f65" *ngIf="id==1">
+    <img src="assets/loom.png" style="width: 30%;     position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -15% 0 0 -15%;">
+  </div>
+
+  <div class="contents"
+       style="background-image: url('assets/2016-11-21-roman-drits-barnimages-010.jpg'); background-size: cover"
+       *ngIf="id==2">
+
+  </div>
+
+  <div class="contents" style="background: #1d4f65" *ngIf="id==3">
+    <img src="assets/sync.png" style="width: 20%;     position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -10% 0 0 -30%;">
+
+    <img src="assets/async.png" style="width: 20%;     position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -10% 0 0 10%;">
+
+  </div>
+
+  <div class="contents" style="background-image: url('assets/manhuntuna.0.jpg'); background-size: cover" *ngIf="id==4">
+    <div style="position: absolute;
+    width: 40%;
+    bottom: 80%;
+    left: 5%;
+    top: 30%;
+    font-size: 8rem;
+    color: white;
+    font-variant-caps: petite-caps;
+    text-shadow: 0 0 13px black;">
+      Eat your cake
+      and have it
+    </div>
+  </div>
+
+
+  <div class="contents" style=" background-image: url('assets/61yQBy7lDlL._UL1001_.jpg');
+
+    background-repeat:   no-repeat;
+    background-position: center center;   " *ngIf="id==5">
+
+    <div style="position: absolute;
+    bottom: 50%;
+    left: 20%;
+    right: 20%;
+    top: 15%;
+    font-size: 8rem;
+    color: white;
+    font-variant-caps: petite-caps;
+    text-shadow: 0 0 13px black;">
+      Make Concurrency
+      Simple Again
+    </div>
+  </div>
+
+  <div class="contents" style="background:white" *ngIf="id==6">
+
+    <article>
+      <h1 style="color: gray">Project Loom</h1>
+      <ul style="line-height: 2em;">
+        <li>Fibers (lightweight user-mode threads)</li>
+        <li>Delimited continuations</li>
+        <li>Tail-call elimination</li>
+      </ul>
+    </article>
+  </div>
+
+
+  <div class="contents" style="background:white" *ngIf="id==7">
+    <article>
+      <h1>What is a continuation?</h1>
+      <p></p>
+    </article>
+  </div>
+
+
+  <div class="contents" style="background-color: #333" *ngIf="id==8">
+
+    <div style="text-align: left;font-size: 2rem; margin: 5% 5% 0 5%">
+      <div [innerHTML]="code1 | safeHtml"></div>
+    </div>
+    <div style="text-align: left;font-size: 2rem; margin: 2% 5% 0 5%">
+      <div [innerHTML]="code1out | safeHtml"></div>
+    </div>
+  </div>
+
+  <div class="contents" style="background:white" *ngIf="id==9">
+
+    <article >
+      <h1 >Current limitations</h1>
+      <ul style="line-height: 2em;">
+        <li>cannot yield with native frames on continuation stack</li>
+        <li>cannot yield while holding monitor</li>
+      </ul>
+    </article>
+  </div>
+
+
+
+  <div class="contents" style="background:white" *ngIf="id==10">
+    <article >
+      <h1 >What is a fiber?</h1>
+      <p>Fiber is a <i>light-weight</i> (or <i>user-mode</i>) thread that is scheduled by the Java virtual machine, not
+        by the operating system (kernel).</p>
+      <p>Fibers are intended to be very small footprint, so that we should be able to have millions of them with
+        negligible task-switching overhead.</p>
+    </article>
+  </div>
+
+
+  <div class="contents" style="background-color: #333" *ngIf="id==11">
+    <div style="text-align: left;font-size: 2rem; margin: 5% 5% 0 5%">
+      <div [innerHTML]="'fiber code' | safeHtml"></div>
+    </div>
+  </div>
+
+
+  <div class="contents" style="background:white" *ngIf="id==12">
+    <article >
+      <h1>...</h1>
+    </article>
+  </div>
+
+  <div class="contents" style="background:white" *ngIf="id==13">
+    <article >
+      <h1>Fibers vs Threads</h1>
+    </article>
+  </div>
+
+  <div class="contents" style="background:white" *ngIf="id==14">
+    <article >
+      <h1>GOTO considered harmful</h1>
+    </article>
+  </div>
+
+  <div class="contents" style="background:white" *ngIf="id==16">
+    <article >
+      <h1>Concurrent fire and forget</h1>
+    </article>
+  </div>
+
+  <div class="contents" style="background:white" *ngIf="id==16">
+    <article >
+      <h1>Concurrent fire and forget</h1>
+    </article>
+  </div>
+
+  <div class="contents" style="background:white" *ngIf="id==17">
+    <article >
+      <h1>Rethink of threads</h1>
+    </article>
+  </div>
+
+  <div class="contents" style="background:white" *ngIf="id==18">
+    <article >
+      <h1 >When?</h1>
+    </article>
+  </div>
+
+  <div class="contents" style="background:white" *ngIf="id==19">
+    <article >
+      <ul style="line-height: 2em;">
+        <li>nitka</li>
+        <li>włókno</li>
+        <li>pasmo</li>
+      </ul>
+    </article>
+  </div>
+
+  <div class="contents" style="background: #1d4f65" *ngIf="id==20">
+    <img src="assets/loom.png" style="width: 30%;     position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -15% 0 0 -15%;">
+  </div>
+
+
+  <div class="contents" style="background-color: #333" *ngIf="id>20"></div>
+</div>

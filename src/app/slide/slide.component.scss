@@ -1,0 +1,59 @@
+
+.progress {
+  display: block;
+  background: #4200b7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  z-index: 100;
+}
+
+
+.id {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 8px;
+  z-index: 100;
+  opacity: 0.250;
+  font-size: 3rem;
+}
+
+html, body, .body {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  text-align: center;
+}
+
+.contents {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  article {
+    position: absolute;
+    bottom: 15%;
+    left: 20%;
+    right: 20%;
+    top: 15%;
+    font-size: 3rem;
+    color: black;
+    text-align: left;
+
+    h1 {
+      font-size: 5rem;
+      color: gray;
+    }
+  }
+}
+
+
+.prism-code {
+  color: rgb(156, 220, 254);
+  background-color: rgb(30, 30, 30);
+}
+
