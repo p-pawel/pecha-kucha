@@ -6,12 +6,14 @@ import {AppComponent} from './app.component';
 import {SlideComponent} from './slide/slide.component';
 import {RouterModule} from "@angular/router";
 import {SafeHtmlPipe} from "./SafeHtmlPipe";
+import { StartComponent } from './start/start.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SlideComponent,
-    SafeHtmlPipe
+    SafeHtmlPipe,
+    StartComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +21,7 @@ import {SafeHtmlPipe} from "./SafeHtmlPipe";
     RouterModule.forRoot([
       {
         path: '',
-        component: AppComponent
+        component: StartComponent
       },
       {
         path: 'slide/:id',

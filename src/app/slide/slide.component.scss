@@ -27,6 +27,14 @@ html, body, .body {
   text-align: center;
 }
 
+.meme {
+  font-size: 8rem !important;
+  color: white !important;
+  font-variant-caps: petite-caps;
+  text-shadow: 0 0 20px #000, 0 0 20px #000, 0 0 20px #000;
+  -webkit-text-stroke: 1px #000;
+}
+
 .contents {
   position: absolute;
   top: 0;
@@ -34,20 +42,21 @@ html, body, .body {
   bottom: 0;
   left: 0;
 
-  article {
-    position: absolute;
-    bottom: 15%;
-    left: 20%;
-    right: 20%;
-    top: 15%;
+  .article {
     font-size: 3rem;
     color: black;
     text-align: left;
 
-    h1 {
-      font-size: 5rem;
-      color: gray;
+    &.abs {
+      margin: 5% 20%;
     }
+
+  }
+
+
+  h1 {
+    font-size: 5rem;
+    color: gray;
   }
 }
 
