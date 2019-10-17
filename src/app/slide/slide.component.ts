@@ -53,7 +53,7 @@ export class SlideComponent implements OnInit {
 
   }
 
-  private async switchSlide(id: number) {
+  public async switchSlide(id: number) {
     if (id < 1) {
       await this.router.navigate(['/'], {relativeTo: this.route,});
     }
@@ -77,5 +77,9 @@ export class SlideComponent implements OnInit {
       await this.switchSlide(this.id + 1);
     }
 
+  }
+
+  swipe($event) {
+    console.log($event);
   }
 }
